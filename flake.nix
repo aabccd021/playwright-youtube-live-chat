@@ -39,7 +39,7 @@
           nix build .#nodeModules
           cp -r ./result/* node_modules
 
-          chown -R node_modules
+          chown -R $USER node_modules
         '');
       };
 
